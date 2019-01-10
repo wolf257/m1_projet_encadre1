@@ -1,0 +1,196 @@
+# CNN . co . jp   国際 ニュース 総合 フィード 
+
+    IFRAME : 
+    // imp . aiasahi . jp / hserver / SITE = CNNCOJP . WORLD / AREA = WALLPAPER / AAMSZ = 1640 X 1 
+    200 / KEYWORD = zone _ world % 2035064256 / OENCJP = UTF 8 / 
+
+    cnn . co . jp 
+      *   _______________________________________________________   Search 
+      *   Featured 
+           +   朝鮮半島 情勢 
+           +   ＣＮＮ が 見 た アジア 
+           +   生物 多様 性 
+           +   サイエンス 
+           +   のりもの だい すき 
+      *   World 
+      *   USA 
+      *   Business 
+      *   Tech 
+      *   Entertainment 
+      *   Travel 
+      *   Photo 
+      *   Video 
+      *   Odd   News 
+      *   Style 
+
+    Login   Member 
+
+    IFRAME : 
+    // imp . aiasahi . jp / hserver / SITE = CNNCOJP . WORLD / AREA = LARGE / AAMSZ = 728 X 90 / KEY 
+    WORD = zone _ world % 2035064256 / OENCJP = UTF 8 / 
+
+      * 
+      *   World 
+
+ １ ０ 歳 少女 を 強姦 し 妊娠 さ せ た 疑い 、 義父 逮捕 　 パラグアイ 
+
+    2015 . 05 . 11   Mon   posted   at   10 : 26   JST 
+      * 
+      *   Tweet 
+
+    IFRAME : 
+    // imp . aiasahi . jp / hserver / SITE = CNNCOJP . WORLD / AREA = TEXT 4 / AAMSZ = 230 X 40 / KEY 
+    WORD = zone _ world % 2035064256 / OENCJP = UTF 8 / 
+
+    １ ０ 歳 少女 の 妊娠 巡り 波紋 　 パラグアイ 
+
+    （ ＣＮＮ ）   南米 パラグアイ で １ ０ 歳 の 少女 が 妊娠 し 、 国際 人権 団体 アムネスティ ・ インターナショナル （ Ａ Ｉ ） が 中絶 を 求め て いる 。 警察 は ９ 日 、 少女 を 強 
+    姦 （ ごうかん ） し て 妊娠 さ せ た 疑い で 、 義理 の 父親 （ ４ ２ ） を 逮捕 し た 。 
+
+    義父 は 事件 が 表面 化 し て から しばらく 姿 を 消し て い た が 、 取り調べ に対して 犯行 を 否定 し 、 胎児 の ＤＮＡ 鑑定 を 要求 し て いる 。 
+
+    少女 は ４月 ２ １ 日 、 腹痛 を 訴え て 首都 アスンシオン 市内 の 病院 に 入院 。 妊娠 が 判明 し た ため 、 当局 が 刑事 事件 として 捜査 を 始め て い た 。 アムネスティ に よる と 
+    少女 の 母親 も 、 保護 責任 を 果たさ なかっ た 疑い で 逮捕 さ れ た 。 
+
+    少女 は 現在 、 妊娠 ２ ２ 週 目 。 母親 ら 家族 は 中絶 の 許可 を 求め て いる が 、 パラグアイ の 法律 で は 母体 の 命 が 危険 と 認め られる 場合 を 除き 中絶 が 禁止 さ れ て いる 。 
+
+    アムネスティ は 、 少女 にとって 未熟 な 体 で 望ま ない 妊娠 を 続ける こと は 危険 な だけ で なく 、 「 拷問 に 等しい 」 と 主張 。 また パラグアイ 当局 に対し 、 強姦 による 
+    妊娠 を 中絶 の 対象 として 認める べき だ と 訴え て いる 。 
+
+    国連 が ２ ０ １ ３ 年 に 出し た 報告 書 に よる と 、 途上 国 で は 毎年 、 １ ４ 歳 未満 の 少女 約 ２ ０ ０ 万 人 が 出産 し て いる 。 体 に 長期 的 な 悪影響 が 出 たり 、 死亡 し たり する 
+    例 も 多い 。 妊娠 、 出産 が 原因 で 死亡 する 少女 は 、 毎年 ７ 万 人 に 上る と 推定 さ れる 。 
+      * 
+      *   Tweet 
+
+ こんな 話題 も 
+
+      *   性行為 教える 「 通過 儀礼 」 、 少女 が 実態 語る 　 マラウイ 02 / 05 
+      *   １ ５ 歳 少女 に むち打ち １ ０ ０ 回 の 判決 　 姦淫 罪 で 　 モルディブ 02 / 28 
+      *   １ ５ 歳 の 少女 と 結婚 し た ７ ０ 歳 男性 が 「 だまさ れ た 」 　 サウジ 01 / 09 
+      *   結婚 を 強制 さ れる 少女 、 世界 に ５ １ ０ ０ 万 人 　 写真 家 が 悪習 廃絶 訴え 08 / 07 
+      *   結婚 を 強要 さ れ た ６ 歳 の 少女 、 救済 さ れ て 学校 へ 　 アフガン 04 / 09 
+
+    IFRAME : 
+    // imp . aiasahi . jp / hserver / SITE = CNNCOJP . WORLD / AREA = UNDERTEXT 3 / AAMSZ = 230 X 4 
+    0 / KEYWORD = zone _ world % 2035064256 / OENCJP = UTF 8 / 
+
+ Video 
+
+    強風 の なか 横向き で 着陸 成功 
+    強風 の なか 横向き で 着陸 成功 10 / 20 
+    深海 で 「 頭 の ない チキン モンスター 」 を 撮影 
+    深海 で 「 頭 の ない チキン モンスター 」 を 撮影 10 / 23 
+    オットセイ 、 海上 の 人間 を タコ で 攻撃 ？ 
+    オットセイ 、 海上 の 人間 を タコ で 攻撃 ？ 09 / 27 
+
+ Photo 
+
+    北京 五輪 から １ ０ 年 、 変わり果て た 競技 会場 
+    北京 五輪 から １ ０ 年 、 変わり果て た 競技 会場 08 / 17 
+    操縦 席 から の 絶景 、 飛行 士 が 撮影 
+    操縦 席 から の 絶景 、 飛行 士 が 撮影 09 / 27 
+    まるで ＳＦ 、 夜 の 東京 を 見る 
+    まるで ＳＦ 、 夜 の 東京 を 見る 06 / 16 
+
+ 注目 ニュース 
+
+      *   トランプ 大統領 、 壁 建設 で テレビ 演説 　 「 心 と 魂 の 危機 」 訴え   12 : 41 
+      *   タイ で 拘束 の サウジ 女性 、 オーストラリア が 難民 ビザ 審査 へ   20 : 00 
+      *   イラン 、 まもなく 衛星 打ち上げ か 　 ＣＮＮ が 画像 入手   18 : 50 
+      *   「 世界 最強 の パスポート 」 、 日本 が 依然 トップ 　 韓国 ２ 位 に   18 : 18 
+      *   ＮＡＳＡ の 惑星 探査 衛星 「 ＴＥＳＳ 」 、 最初 の 成果 　 系 外 惑星 ３つ を 発見   19 : 30 
+
+    IFRAME : 
+    // imp . aiasahi . jp / hserver / SITE = CNNCOJP . WORLD / AREA = RECT / AAMSZ = 300 X 250 / KEY 
+    WORD = zone _ world % 2035064256 / OENCJP = UTF 8 / 
+
+    IFRAME : 
+    // imp . aiasahi . jp / hserver / SITE = CNNCOJP . WORLD / AREA = CHUMOKU / AAMSZ = 300 X 100 / 
+    KEYWORD = zone _ world % 2035064256 / OENCJP = UTF 8 / 
+
+    地球 上 の 秘境 
+
+ 編集 部 セレクト 
+
+    写真 特集 ： 世界 最大 の 未 完成 機 、 ２ 機 目 の Ａｎ ２ ２ ５ 
+    写真 特集 ： 世界 最大 の 未 完成 機 、 ２ 機 目 の Ａｎ ２２５01 / 03 
+    カリブ海 の 巨大 陥没 穴 「 グレート ブルーホール 」 、 海底 探査 で 謎 解明 へ 
+    カリブ海 の 巨大 陥没 穴 「 グレート ブルーホール 」 、 海底 探査 で 謎 解明 へ 12 / 12 
+    太陽系 の 最果て の 天体 「 ファー アウト 」 発見 、 すばる 望遠鏡 で 観測 
+    太陽系 の 最果て の 天体 「 ファー アウト 」 発見 、 すばる 望遠鏡 で 観測   12 / 18 
+    ザンビア で エメラルド の 原石 見つかる 、 重 さ １ ． １ キロ 
+    ザンビア で エメラルド の 原石 見つかる 、 重 さ １ ． １ キロ 10 / 31 
+    猫 の ミイラ が 数 十 体 、 珍しい スカラベ の ミイラ も 　 エジプト で 発掘 
+    猫 の ミイラ が 数 十 体 、 珍しい スカラベ の ミイラ も 　 エジプト で 発掘 11 / 12 
+
+    IFRAME : 
+    // imp . aiasahi . jp / hserver / SITE = CNNCOJP . WORLD / AREA = MRECT / AAMSZ = 300 X 250 / KE 
+    YWORD = zone _ world % 2035064256 / OENCJP = UTF 8 / 
+
+ アクセス ランキング 
+
+     1 .   「 脱出 ルーム 」 で 火災 、 １ ５ 歳 少女 ５ 人 死亡 　 ポーランド 01 / 05 
+     2 .   空き家 が あふれる 日本 、 定住 希望 者 に は 「 家 を あげ ます 」 01 / 03 
+     3 .   元 イングランド 代表 の ルーニー を 逮捕 、 公共 の 場 で 泥酔 　 米 01 / 07 
+     4 .   皮 を はがれ た 生贄 の 神 「 シペ・トテック 」 の 寺院 、 初めて 発掘 　 メキシコ 01 / 04 
+     5 .   ７ 歳 少女 を 「 人違い 」 で 射殺 か 、 ２ ０ 歳 の 容疑 者 逮捕 　 米 テキサス 州 01 / 07 
+
+    IFRAME : 
+    // imp . aiasahi . jp / hserver / SITE = CNNCOJP . WORLD / AREA = VRECT / AAMSZ = 300 X 250 / KE 
+    YWORD = zone _ world % 2035064256 / OENCJP = UTF 8 / 
+
+      *   CNN . co . jp   App   CNN . co . jp   App   for   iPhone / iPad 
+      *   CNN テレビ 視聴   CNN テレビ 視聴 
+      *   CNN   US   アメリカ 国内 版 CNN / US テレビ を そのまま 日本 で 
+      *   CNN   English   ちょっと 手ごわい 、 でも 効果 絶大 ！ 
+
+      * 
+      * 
+      * 
+
+      *   Home 
+      *   Featured 
+      *   World 
+      *   USA 
+      *   Business 
+      *   Tech 
+      *   Entertainment 
+      *   Travel 
+      *   Photo 
+      *   Video 
+      *   Odd   News 
+      *   Style 
+      *   Topic 
+      *   RSS 
+
+      *   各国 語 サイト 
+      *   CNN   International 
+      *   CNN   en   ESPAÑOL 
+      *   CNN   Chile 
+      *   CNN   México 
+      *   العربية 
+      *   Türkçe 
+
+      *   関連 リンク 
+      *   CNN   Business 
+      *   bleacherreport 
+      *   朝日新聞 デジタル 
+
+      *   プライバシー 
+      *   CNN . co . jp に関する 問い合わせ 
+      *   日本 で の CNN の 放送 に関する お 問い合わせ 
+      *   広告 掲載 
+      *   サイト 利用 
+      *   サイト マップ 
+
+    ©   2019   Cable   News   Network .　 Turner   Broadcasting   System ,   Inc .　 All   Rights 
+    Reserved . 
+
+    この サイト で は 、 利用 状況 の 把握 や 広告 配信 など の ため に 、 Cookie など を 使用 し て アクセス データ を 取得 ・ 利用 し て い ます 。 
+    これ 以降 ページ を 遷移 し た 場合 、 Cookie など の 設定 や 使用 に 同意 し た こと に なり ます 。 
+    Cookie など の 設定 や 使用 の 詳細 、 オプトアウト について は 詳細 を ご覧 ください 。 
+    [   閉じる   ] 
+
+    IFRAME : 
+    // imp . aiasahi . jp / hserver / SITE = CNNCOJP . WORLD / AREA = INREAD / AAMSZ = 1 X 1 / KEYWO 
+    RD = zone _ world % 2035064256 / OENCJP = UTF 8 / 

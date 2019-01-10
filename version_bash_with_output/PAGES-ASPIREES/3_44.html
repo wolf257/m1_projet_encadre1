@@ -1,0 +1,745 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+
+<title>パキスタン：誘拐、強姦され、イスラム教に改宗させられたキリスト教徒の少女がその体験を語る : 国際 : クリスチャントゥデイ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+<meta name="Description" content="１５歳のコマルさんは昨年６月、パキスタンの自宅から誘拐され、強姦されてイスラム教に強制的に改宗させられた。彼女は絶えず虐待を受け、強姦した者の１人と結婚させられた上に売春をさせられ、妊娠した。" /><meta http-equiv="Imagetoolbar" content="no" />
+ <meta name="twitter:site" content="chtodayjp" />
+ <meta property="fb:app_id"                 content="1625923791071391" />
+ <meta property="og:type"                 content="article" />
+  <meta property="og:url"                  content="http://www.christiantoday.co.jp/articles/20416/20160409/pakistan.htm" />
+  <meta property="og:site_name"            content="クリスチャントゥデイ" />
+ <meta property="og:image"                content="https://www.christiantoday.co.jp/data/images/full/18739/image.jpg" />
+ <meta property="og:title"                content="パキスタン：誘拐、強姦され、イスラム教に改宗させられたキリスト教徒の少女がその体験を語る" />
+ <meta property="og:description"          content="１５歳のコマルさんは昨年６月、パキスタンの自宅から誘拐され、強姦されてイスラム教に強制的に改宗させられた。彼女は絶えず虐待を受け、強姦した者の１人と結婚させられた上に売春をさせられ、妊娠した。" />
+ <meta property="article:published_time"  content="2016-04-09" />
+<meta name="syndication-source" content="https://www.christiantoday.co.jp/articles/20416/20160409/pakistan.htm" />
+<meta name="news_keywords" content="パキスタン" />
+<link rel="canonical" href="https://www.christiantoday.co.jp/articles/20416/20160409/pakistan.htm" />
+<meta name="robots" content="index, follow" />
+<meta name="Googlebot-news" content="index, follow" />
+<link rel="stylesheet" href="https://www.christiantoday.co.jp/views/css/style.css?10" type="text/css" />
+<link rel="stylesheet" href="https://www.christiantoday.co.jp/views/css/sp.css?6" type="text/css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.3/example1/colorbox.min.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="クリスチャントゥデイ RSS Feeds" href="https://www.christiantoday.co.jp/rss/" />
+<link rel="shortcut icon" href="https://www.christiantoday.co.jp/favicon.ico" type="image/x-icon" />
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script type="text/javascript" src="https://www.christiantoday.co.jp/home/js/common.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.3/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.1.0/jquery.timeago.min.js"></script>
+<script type="text/javascript">
+_current_device_type='computer';
+_current_is_ios='0';
+</script>
+
+
+<!-- オーバーフロー広告 -->
+
+
+
+
+<!-- Google DFP -->
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+ var gptAdSlots = [];
+googletag.cmd.push(function() {
+googletag.defineSlot('/14059165/article_top_728', [728, 90], 'div-gpt-ad-1386892509642-10').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_mid1_728', [728, 90], 'div-gpt-ad-1386892509642-6').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_bot_728', [728, 90], 'div-gpt-ad-1386892509642-3').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_articlebot2_300', [300, 250], 'div-gpt-ad-1386892509642-1').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_articlebot1_300', [300, 250], 'div-gpt-ad-1386892509642-0').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_bot_300', [300, 250], 'div-gpt-ad-1386892509642-2').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_mid1_300', [300, 250], 'div-gpt-ad-1448432764134-0').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_mid2_300', [300, 250], 'div-gpt-ad-1394533127152-0').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_titlebot_300', [300, 100], 'div-gpt-ad-1529673229180-0').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_photobot_300', [300, 250], 'div-gpt-ad-1448432070111-0').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_titlebot_728', [728, 90], 'div-gpt-ad-1459501768443-0').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_top_300', [300, 250], 'div-gpt-ad-1386892509642-9').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_top2_300', [300, 50], 'div-gpt-ad-1408015402652-0').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_top3_300', [300, 50], 'div-gpt-ad-1461742567956-0').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_top4_300', [300, 50], 'div-gpt-ad-1480171996128-0').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_top5_300', [300, 50], 'div-gpt-ad-1481629387044-0').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_top6_300', [300, 50], 'div-gpt-ad-1481629387044-1').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_top7_300', [300, 50], 'div-gpt-ad-1485001312857-0').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_top8_300', [300, 50], 'div-gpt-ad-1485001312857-1').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_top9_300', [300, 50], 'div-gpt-ad-1485001312857-2').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_top10_300', [300, 50], 'div-gpt-ad-1485001312857-3').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_top11_300', [300, 50], 'div-gpt-ad-1508078777455-0').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_top12_300', [300, 50], 'div-gpt-ad-1508078777455-1').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_top13_300', [300, 50], 'div-gpt-ad-1508078777455-2').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_top14_300', [300, 50], 'div-gpt-ad-1508078777455-3').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_top15_300', [300, 50], 'div-gpt-ad-1508078777455-4').addService(googletag.pubads());
+googletag.defineSlot('/14059165/article_mobile_top_320', [[320, 100], [300, 100]], 'div-gpt-ad-1529680572017-0').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+
+// Start ad fetching
+googletag.enableServices();
+});
+</script>
+<!-- /Google DFP -->
+<!-- コピーライトの年自動更新用 -->
+<script type="text/javascript">
+function ShowNowYear() {
+   var now = new Date();
+   var year = now.getFullYear();
+   document.write(year);
+}
+</script>
+
+</head><body>
+<header>
+    <div class="hd-con">
+	    <div class="innerwrap">
+	        <p class="t1"><a href="/">クリスチャントゥデイをお気に入りに追加</a></p>
+	        <p class="top-sns"><a href="https://www.facebook.com/chtodayjp" target="_blank" class="fb"><span>facebook</span></a><a href="https://twitter.com/chtodayjp" target="_blank" class="tw"><span>twitter</span></a><a href="https://plus.google.com/+chtodayjp" target="_blank" class="gp"><span>google+</span></a><a href="/rss/" class="rss"><span>rss</span></a></p>
+	    </div>
+    </div><!-- /hd-con -->
+    <div class="hd-con2">
+
+
+<style>
+#mmenu{
+	display:none;
+	position:absolute;
+	left:0px;
+	top:50px;
+	background:none;
+	background-color:rgba(0,0,0,0.8);
+}
+#mmenu li{
+}
+#mmenu li a{
+color:white;
+padding-left:10px;
+padding-right:20px;
+padding-top:10px;
+padding-bottom:10px;
+border-bottom:1px solid white;
+font-size:1.0rem;
+display:block;
+}
+
+.m-menu-show{display:block !important;}
+</style>
+	    <div class="innerwrap" style="position:relative">
+	        <div class="ic-nav">
+		        <a href="javascript:void(0);" id="m-nav" onclick="if($('#mmenu').hasClass('m-menu-show')){$('#mmenu').removeClass('m-menu-show');}else{$('#mmenu').addClass('m-menu-show');}">
+			        <span><img src="/views/images/ctmenu.png" width="25px" height="38px"></span></a>
+				<div id="mmenu">
+					<ul class="menu">
+				    	<li><a href="/">ホーム</a></li>
+				        <!-- li><a href="/archive/">記事一覧</a></li -->
+				        <li><a href="/church/">教会</a></li>
+				        <li><a href="/theology/">神学・教育</a></li>
+				        <li><a href="/mission/">宣教</a></li>
+				        <li><a href="/international/">国際</a></li>
+				        <li><a href="/society/">社会</a></li>
+				        <li><a href="/culture/">文化</a></li>
+    				        <li><a href="/column/">コラム</a></li>
+    				        <li><a href="/book/">書籍</a></li>
+    				        <li><a href="/event/">イベント</a></li>
+				        <!-- li><a href="/opinion-column/">論説・コラム</a></li -->
+				    </ul>
+				</div>
+			        <span style="position:absolute;right:0px"><a href="/?pc=1"><img src="/views/images/ctpc.png" width="25px" height="38px"></a></span></a>
+		    </div>
+	        <div class="nwletters"><!-- a href="/about/sponsor.htm" target="_blank"><span class="ic-sponsor"></span>年間スポンサーのお願い</a --><!-- a href="https://b.bme.jp/bm/p/f/tf.php?id=chtodayjp" target="_blank"><span class="ic-mail"></span>メールマガジを購読する</a --></div>
+	        <div class="logo"><a href="/"><img src="https://www.christiantoday.co.jp/views/images/logo.png" alt="Christian Today, Japan"></a></div>
+	    </div>
+    </div><!-- /hd-con2 -->
+</header>
+
+<nav>
+	<div class="innerwrap">
+		<ul class="menu">
+				    	<li><a href="/">ホーム</a></li>
+				        <!-- li><a href="/archive/">記事一覧</a></li -->
+				        <li><a href="/church/">教会</a></li>
+				        <li><a href="/theology/">神学・教育</a></li>
+				        <li><a href="/mission/">宣教</a></li>
+				        <li><a href="/international/" class="on">国際</a></li>
+				        <li><a href="/society/">社会</a></li>
+				        <li><a href="/culture/">文化</a></li>
+    				        <li><a href="/column/">コラム</a></li>
+    				        <li><a href="/book/">書籍</a></li>
+    				        <li><a href="/event/">イベント</a></li>
+				        <!-- li><a href="/opinion-column/">論説・コラム</a></li -->
+	    </ul>
+	    <div class="srch"><form id="header-search" action="/search/"><input type="search" placeholder="ニュース検索" name="q" class="input"><span class="ic-srch finger" id="search-go"></span></form></div>
+	</div>
+</nav>
+
+<!-- div class="top-topic">
+	<div class="innerwrap">
+		<p class="topic">	<span class="tit">トピックス</span>
+	<a href='/topics/torrential-rains-in-kyushu'>九州豪雨</a>　&nbsp;<a href='/topics/500th-anniversary-of-reformation'>宗教改革５００年</a>　&nbsp;<a href='/topics/bible-translations'>聖書翻訳</a>　&nbsp;<a href='/topics/same-sex'>同性愛</a>　&nbsp;<a href='/topics/okinawa'>沖縄</a>　&nbsp;</p>	    <ul class="sns">
+		<li><iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fzuck&width=95&height=20&layout=button&size=small&show_faces=false&locale=ja_JP&appId=154340537932922" width="95" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+		</li>
+	        <li><iframe allowtransparency="true" frameborder="0" scrolling="no" src="//platform.twitter.com/widgets/follow_button.html?lang=ja&amp;screen_name=chtodayjp&amp;show_count=false&amp;show_screen_name=false&amp;size=m" class="twitter-follow-button" style="width: 100px; height: 20px;" title="Twitter Follow Button"></iframe></li>
+	    </ul>
+	</div>
+</div -->
+		<div class="ad-top"><!-- article_top_728 -->
+<div id='div-gpt-ad-1386892509642-10' style='margin:0 auto;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1386892509642-10'); });
+</script>
+</div></div>
+	<section class="contents">
+	<div class="innerwrap">
+		<div class="left">
+		<div class="left-inner">
+		<!--<script src="/views/js/side.js"></script>-->
+<div class="art-body">
+<div style="margin-bottom:12px"><a href="/">ホーム</a> &gt; <a href="/international/">国際</a> </div>
+<h1 class="art-ttl">パキスタン：誘拐、強姦され、イスラム教に改宗させられたキリスト教徒の少女がその体験を語る</h1>
+<div class="date">
+<div class="date-inner">
+	2016年4月9日18時18分
+	<span class="reporter-name">翻訳者 : <a href="/reporter/kinoshita-yuki/">木下優紀</a><span>    		<span class="print"><a href="javascript:void(0)" onclick="win_print('20416');"><i></i>印刷</a></span>
+	</div>
+</div>
+<div class="art-tool">
+    	<!-- 記事上シェアボタン（小） -->
+    		<ul class="sns">
+		<li data-via=“chtodayjp" data-related=“chtodayjp"><!-- a href="https://twitter.com/share" class="twitter-share-button" data-via="chtodayjp" data-lang="ja" data-related="chtodayjp">ツイート</a --><a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-related="chtodayjp">ツイート</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id =id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+		<li data-via=“chtodayjp" data-related=“chtodayjp"><script type="text/javascript" src="//apis.google.com/js/plusone.js"></script><div class="g-plusone" data-size="medium" data-width="90" data-height="20" data-href="https://www.christiantoday.co.jp/articles/20416/20160409/pakistan.htm" data-annotation="none"></div></li>
+	        	<li data-via=“chtodayjp" data-related=“chtodayjp"><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.christiantoday.co.jp%2Farticles%2F20416%2F20160409%2Fpakistan.htm&amp;send=false&amp;layout=button_count&amp;width=115&amp;show_faces=true&amp;action=like&amp;locale=ja_JP&amp;colorscheme=light&amp;font&amp;height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:115px; height:20px;" allowTransparency="true"></iframe></li>
+	</ul>
+	    	<!-- /記事上シェアボタン（小） -->
+    		<!-- 記事上シェアボタン（中） -->
+	<div class="bigshare-top">
+		<a href="javascript:;" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.christiantoday.co.jp%2Farticles%2F20416%2F20160409%2Fpakistan.htm','sns','width=600,height=300');return false;"><img class="fb" src="/views/images/fbbtn.jpg" alt="Facebookでシェアする" onmouseover="this.src='/views/images/fbbtn_on.jpg'" onmouseout="this.src='/views/images/fbbtn.jpg'" /></a>
+		<a href="javascript:;" data-lang="ja" data-related="chtodayjp" onclick="window.open('https://twitter.com/share?text=%E3%83%91%E3%82%AD%E3%82%B9%E3%82%BF%E3%83%B3%EF%BC%9A%E8%AA%98%E6%8B%90%E3%80%81%E5%BC%B7%E5%A7%A6%E3%81%95%E3%82%8C%E3%80%81%E3%82%A4%E3%82%B9%E3%83%A9%E3%83%A0%E6%95%99%E3%81%AB%E6%94%B9%E5%AE%97%E3%81%95%E3%81%9B%E3%82%89%E3%82%8C%E3%81%9F%E3%82%AD%E3%83%AA%E3%82%B9%E3%83%88%E6%95%99%E5%BE%92%E3%81%AE%E5%B0%91%E5%A5%B3%E3%81%8C%E3%81%9D%E3%81%AE%E4%BD%93%E9%A8%93%E3%82%92%E8%AA%9E%E3%82%8B&url=http%3A%2F%2Fwww.christiantoday.co.jp%2Farticles%2F20416%2F20160409%2Fpakistan.htm','sns','width=600,height=300');return false;"><img class="tw" src="/views/images/twbtn.jpg" alt="Twitterでシェアする" onmouseover="this.src='/views/images/twbtn_on.jpg'" onmouseout="this.src='/views/images/twbtn.jpg'" /></a>
+	</div>
+		<!-- /記事上シェアボタン（中） -->
+</div>
+	<!-- 関連タグ -->
+	<div class="art-tag1"><span>関連タグ：</span><a href='/tags/pakistan'>パキスタン</a><a href='/tags/international-christian-concern'>国際キリスト教コンサーン（ＩＣＣ）</a></div>	<!-- 広告 -->
+				<div class="ad-mid"><!-- /14059165/article_titlebot_728 -->
+<div id='div-gpt-ad-1459501768443-0' style='height:90px; width:728px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1459501768443-0'); });
+</script>
+</div></div>
+		
+
+
+    <div class="article">
+
+    			<p>１５歳のコマルさんは昨年６月、パキスタンの自宅から誘拐され、強姦されてイスラム教に強制的に改宗させられた。彼女は絶えず虐待を受け、強姦した者の１人と結婚させられた上に売春をさせられ、妊娠した。拘束されている間、彼女はイエスが誠実であり、今置かれている地獄から救い出してくれるという信仰を持っていた。今年２月、彼女は逃げることができた。国際キリスト教コンサーン（ＩＣＣ）にその体験談を語った。</p>
+<p>コマルさんはＩＣＣに、誘拐された夜のことについて、「私は停電中に、母とシングルベッドで眠っていました。深夜ごろ、覆面し武装した５人の男が境界の塀を乗り越え、家に入ってきました。男たちは家族全員を野蛮にも暴行し、もし大声で助けを呼んだらひどい報復を加えると脅しました。そして、男たちは私を母の膝から引き離し、通りにある車へ乗せました。目と口をふさがれ、知らないところに連れて行かれました。そして、５人はそれぞれ順番に私を強姦しました」と語った。</p>
+<p>彼女が拘束されていた６カ月間、誘拐犯たちは彼女を虐待し続けた。「私の女性器をタバコの火で焼くのはいつものことでした。ほぼ２カ月の間、毎日彼らは私を殴り、十分な食事を与えてくれませんでした」</p>
+<p>コマルさんは強制的に、キリスト教からイスラム教へと法的に改宗させられ、年齢を１８歳とごまかした書類で誘拐犯の１人と結婚させられた。「ほぼ２カ月間の非人道的な扱いと屈辱の後、彼らは私を裁判所に連れて行き、私をムスリムの妻とする書類に拇印を押させました」とコマルさん。</p>
+<p>パキスタンでは、ある女性の夫は妻に対し、法的な管理権を持つ。「私はこのようなことを望みませんでしたが、彼らがもし従わなければ両親を殺すと脅したので、他に選択肢はなかったのです。ですから、彼らは私を強制的にムスリムと結婚させ、またイスラム教に改宗させました。私の意志によらず、彼らは私の宗教、アイデンティティー、名前さえも変えました。私の新しい夫は、その後さらに２カ月間私を強姦し続け、他の街に引っ越しました。彼の自宅には、すでに２人の妻がいました」とコマルさんは語った。</p>
+<p>彼女の新しい夫は、コマルさんを強制的に売春婦にさせた。そのことを彼女は「全てにおいて最もひどい苦痛」だと述べた。「私は毎日死ぬ思いでした。強制的に売春をさせられたのです。彼はほとんど昼夜なく私を見張らせるため、見張り役の女性を雇いすらしました」。この間のことについてコマルさんは、「私はイエスがこの地獄から救い出してくれるという信仰がありました」と述べた。</p>
+<p>今年２月、逃げる機会がやってきた。「夜明け前、私はその家からなんとかこっそり抜け出し、５時間歩いた後、都市部に着きました。私はそこにいた人々に物乞いをしてバスの運賃をなんとか調達し、その日の日没後に自宅に着きました。私は、再び両親と暮らせるこの憐れみと奇跡を感謝します。誘拐後初めて両親と家族をハグしたとき、涙が止まりませんでした。私と両親が経験したこの痛ましい状況は、ほとんど想像できないでしょう。死から復活するようなものでした」</p>
+<p>拘束されている間、コマルさんは妊娠した。「私は、まだ見ぬ赤ちゃんにどうすればいいか混乱しました。もし私がこの子を産んだら、この子の将来はどうなるでしょう？」</p>
+<p>コマルさんの体験は特異なものではない。「Movement for Solidarity and Peace（連帯と平和のための運動、ＭＳＰ）」の調査によると、毎年７００人ものキリスト教徒の女性や少女が誘拐され、イスラム教に強制的に改宗させられる。その多くは１２歳から２５歳だ。</p>
+<p>「私は正義を求めますが、両親を危険にさらしたくはありません」とコマルさん。「あの人たちは非常に裕福で影響力があるので、彼らに対して法的な手続きを取ることができないのです。私はただ離婚して、幸せな人生の計画を立てたいのです」</p>
+
+
+		<div class="source">※この記事は<a href="http://www.christiantoday.com/" target="_blank">英国クリスチャントゥデイ</a>の記事を日本向けに翻訳・編集したものです。</div>
+
+	</div><!-- /article -->
+
+<div class="art-tool">
+	<!-- 大きないいね！ボタン -->
+	<!-- div class="big_fb_like_outer" align="center">
+		<div class="big_fb_like_inner">
+		<span class="sentence1">この記事が気に入ったら「いいね！」しよう</span>
+		<div class="big_fb_like">
+		<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fchtodayjp&width=88&layout=button&action=like&size=large&show_faces=false&share=false&height=65&appId=154340537932922" width="88" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+		</div>
+		<span class="sentence2">フェイスブックで最新情報をお届けします</span>
+		</div>
+	</div -->
+	<!-- /大きないいね！ボタン -->
+    	<!-- 記事下シェアボタン（小） -->
+	<ul class="sns">
+		<li data-via=“chtodayjp" data-related=“chtodayjp"><!-- a href="https://twitter.com/share" class="twitter-share-button" data-via="chtodayjp" data-lang="ja" data-related="chtodayjp">ツイート</a --><a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja" data-related="chtodayjp">ツイート</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id =id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+		<li data-via=“chtodayjp" data-related=“chtodayjp"><script type="text/javascript" src="//apis.google.com/js/plusone.js"></script><div class="g-plusone" data-size="medium" data-width="90" data-height="20" data-href="https://www.christiantoday.co.jp/articles/20416/20160409/pakistan.htm" data-annotation="none"></div></li>
+	        	<li data-via=“chtodayjp" data-related=“chtodayjp">
+
+	    	        	        	<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.christiantoday.co.jp%2Farticles%2F20416%2F20160409%2Fpakistan.htm&amp;send=false&amp;layout=button_count&amp;width=115&amp;show_faces=true&amp;action=like&amp;locale=ja_JP&amp;colorscheme=light&amp;font&amp;height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:115px; height:20px;" allowTransparency="true"></iframe>
+	        	</li>
+	</ul>
+    	<!-- /記事下シェアボタン（小） -->
+	<div class="nwletters-btm"><!-- a href="/about/sponsor.htm" target="_blank"><span class="ic-sponsor"></span>年間スポンサーのお願い</a --><!-- a href="https://b.bme.jp/bm/p/f/tf.php?id=chtodayjp" target="_blank"><span class="ic-mail"></span>メールマガジンを購読する</a --></div>
+</div>
+
+	<!-- 記事下シェアボタン（中） -->
+	<div class="bigshare-btm">
+		<a href="javascript:;" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.christiantoday.co.jp%2Farticles%2F20416%2F20160409%2Fpakistan.htm','sns','width=600,height=300');return false;"><img class="fb" src="/views/images/fbbtn.jpg" alt="Facebookでシェアする" onmouseover="this.src='/views/images/fbbtn_on.jpg'" onmouseout="this.src='/views/images/fbbtn.jpg'" /></a>
+		<a href="javascript:;" onclick="window.open('https://twitter.com/share?text=%E3%83%91%E3%82%AD%E3%82%B9%E3%82%BF%E3%83%B3%EF%BC%9A%E8%AA%98%E6%8B%90%E3%80%81%E5%BC%B7%E5%A7%A6%E3%81%95%E3%82%8C%E3%80%81%E3%82%A4%E3%82%B9%E3%83%A9%E3%83%A0%E6%95%99%E3%81%AB%E6%94%B9%E5%AE%97%E3%81%95%E3%81%9B%E3%82%89%E3%82%8C%E3%81%9F%E3%82%AD%E3%83%AA%E3%82%B9%E3%83%88%E6%95%99%E5%BE%92%E3%81%AE%E5%B0%91%E5%A5%B3%E3%81%8C%E3%81%9D%E3%81%AE%E4%BD%93%E9%A8%93%E3%82%92%E8%AA%9E%E3%82%8B&url=http%3A%2F%2Fwww.christiantoday.co.jp%2Farticles%2F20416%2F20160409%2Fpakistan.htm','sns','width=600,height=300');return false;"><img class="tw" src="/views/images/twbtn.jpg" alt="Twitterでシェアする" onmouseover="this.src='/views/images/twbtn_on.jpg'" onmouseout="this.src='/views/images/twbtn.jpg'" /></a>
+	</div>
+	<!-- /記事下シェアボタン（中） -->
+<!-- 関連タグ -->
+<div class="art-tag2"><span>関連タグ：</span><a href='/tags/pakistan'>パキスタン</a><a href='/tags/international-christian-concern'>国際キリスト教コンサーン（ＩＣＣ）</a></div><!-- 広告 -->
+	<div class="ad-aftertag">
+	<!-- article_articlebot1_300 -->
+<div id='div-gpt-ad-1386892509642-0' style='width:300px; height:250px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1386892509642-0'); });
+</script>
+</div>		<!-- article_articlebot2_300 -->
+<div id='div-gpt-ad-1386892509642-1' class="articlebot2" style='width:300px; height:250px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1386892509642-1'); });
+</script>
+</div>	</div>
+<!-- 関連記事 -->
+<h4 class="secttl">関連記事</h4>
+    <div class="art-related">
+    			<h3><a href="/articles/20256/20160404/pakistan.htm">イスラム急進派に瀕死の刺し傷を負わされ放置される　パキスタンでキリスト教徒であることのコスト</a></h3>
+				<h3><a href="/articles/20208/20160331/pakistani-christians-cry-easter-attack.htm">イースターのテロ事件発生時のキリスト教徒の叫び「テロリストが私たちを殺しに来た」　パキスタン</a></h3>
+				<h3><a href="/articles/20207/20160331/islamic-radicals-kill-70-pakistani-christians.htm">イスラム急進派が公園でイースターを祝うパキスタンのキリスト教徒と子ども７０人を殺害</a></h3>
+				<h3><a href="/articles/20206/20160331/pakistan-bomb-blast.htm">パキスタン自爆テロで多くのキリスト教徒の女性、子どもが殺害される</a></h3>
+				<h3><a href="/articles/20205/20160331/lahore-attack.htm">ラホール自爆テロ：「標的はキリスト教徒」とタリバンが声明</a></h3>
+		    </div>
+<!-- サポーターとサポートのお願い -->
+<div class="supporter">
+	<div class="supporter_des">
+		<h2>クリスチャントゥデイからのお願い</h2>
+		<p>いつもご愛読いただき、ありがとうございます。皆様のおかげで、クリスチャントゥデイは月間40万ページビュー（閲覧数）と、日本で最も多くの方に読まれるキリスト教オンラインメディアとして成長することができました。</p>
+		<p>記事の一つ一つは、記者が取材をして書き上げ、翻訳者が海外のニュースを邦訳し、さらに編集者や校閲者の手も経て配信しているものです。また、多くのコラムニストや寄稿者から原稿をいただくことで、毎日欠かすことなくニュースやコラムを発信できています。</p>
+		<p>この日々の活動を支え、より充実した報道を実現するため、読者の皆様にはぜひ、祈りと共に、定期的にサポートする「サポーター」として（1,000円/月〜）、また単発の「サポート」（3,000円〜）によって応援していただきたく、ご協力をお願い申し上げます。支払いはクレジット決済（Paypal）で可能です。希望者には、週刊メールマガジンも送らせていただきます。サポーターやサポートの詳細、またクレジットカードをお持ちでない方は<a href="https://www.christiantoday.co.jp/about/sponsor.htm" target="_blank"><span style="color:#08529d; text-decoration:underline;">こちら</span></a>をご覧ください。</p>
+	</div>
+	<div class="supporter_btn_out">
+		<ul class="supporter_float">
+			<li class="supporter_btn">
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				    <input type="hidden" name="cmd" value="_s-xclick">
+				    <input type="hidden" name="hosted_button_id" value="BW3A2HRYFBDQ4">
+				    <table style="padding-bottom:10px;">
+				    <tr><td><input type="hidden" name="on0" value="金額を指定">金額を指定：</td><td><select name="os0">
+				    	<option value="1,000円">1,000円/月</option>
+				    	<option value="3,000円">3,000円/月</option>
+				    	<option value="5,000円">5,000円/月</option>
+				    </select> </td></tr>
+				    </table>
+				    <input type="hidden" name="currency_code" value="JPY">
+				    <input type="image" src="https://www.christiantoday.co.jp/about/images/supporter_button.png" border="0" name="submit" alt="サポーターになる">
+				    <img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</li>
+			<li class="supporter_btn">
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="J3DCA7YJ2KFPA">
+				<table class="tb_kingaku">
+				<tr><td class="kingaku"><input type="hidden" name="on0" value="金額を選択">金額を選択：</td><td><select name="os0">
+					<option value="3,000円">3,000円</option>
+					<option value="5,000円">5,000円</option>
+					<option value="10,000円">10,000円</option>
+					<!-- option value="30,000円">30,000円</option>
+					<option value="50,000円">50,000円</option -->
+				</select> </td></tr>
+				</table>
+				<input type="hidden" name="currency_code" value="JPY">
+				<input type="image" src="https://christiantoday.co.jp/about/images/contribute_button_2.png" border="0" name="submit" alt="サポートする">
+				<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- Google 関連コンテンツ -->
+<!-- UZOU広告 -->
+<div class="uz-christiantoday_pc uz-ny"></div>
+<link rel="stylesheet" href="//speee-ad.akamaized.net/tag/christiantoday_pc/css/outer-style.css">
+<script async type="text/javascript" src="//speee-ad.akamaized.net/tag/christiantoday_pc/js/outer-frame.min.js" charset="utf-8"></script>
+<!-- 広告 -->
+<div class="ad-mid"><!-- article_mid1_728 -->
+<div id='div-gpt-ad-1386892509642-6'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1386892509642-6'); });
+</script>
+</div></div>
+<!-- カテゴリの最新記事 -->
+<h4 class="secttl">国際の最新記事
+<a href="/international/" class="more2">
+国際の記事一覧ページ</a>
+</h4>
+<div class="cat-recent">
+<h3><a href="/articles/26435/20190109/george-h-w-bush-doing-good-in-secret.htm">故ジョージ・Ｈ・Ｗ・ブッシュ米元大統領の「隠れた善行」</a></h3>
+<h3><a href="/articles/26432/20190108/hong-kong-protestants-black-clothes-china-persecution.htm">香港プロテスタント、黒の喪服で礼拝参加　中国本土の迫害受け</a></h3>
+<h3><a href="/articles/26431/20190108/vatican-press-office-top-two-resign.htm">バチカン広報局のトップ２人が突如辞任</a></h3>
+<h3><a href="/articles/26422/20190104/britain-commissions-review-of-christian-persecution-worldwide.htm">キリスト教徒の迫害に関する独立調査実施へ　英政府、ＣＭＳ前会長に依頼</a></h3>
+<h3><a href="/articles/26403/20181228/billy-graham-fbi.htm">ＦＢＩ、ビリー・グラハム関連の秘密資料公開　脅迫文など約５００ページ</a></h3>
+<h3><a href="/articles/26396/20181225/sodom-dead-sea.htm">ソドム滅亡の証拠？　研究チーム「上空からの高温の爆風」が死海近郊の都市を滅亡させた</a></h3>
+<h3><a href="/articles/26389/20181223/indonesia-tsunami-wcc.htm">インドネシアで津波、２２２人死亡　火山噴火による海底地滑り原因か　ＷＣＣが哀悼の意</a></h3>
+</div><!-- コメント -->
+<!-- アマゾン -->
+		<!-- div class="art-amazon1">
+		<h4 class="secttl">キリスト教の新刊
+		<a class="more2" target="_blank" href="http://www.amazon.co.jp/s/ref=as_li_ss_tl?_encoding=UTF8&bbn=492124&camp=247&creative=7399&fst=as%3Aoff&linkCode=ur2&qid=1460155984&rh=n%3A465392%2Cn%3A!465610%2Cn%3A571582%2Cn%3A492124%2Cn%3A500478&rnid=492124&tag=christiantcoj-22">アマゾンのキリスト教書籍</a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=christiantcoj-22&l=ur2&o=9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+		</h4>
+		<div class="art-amazon-inner">
+		<SCRIPT charset="utf-8" type="text/javascript" src="http://ws-fe.amazon-adsystem.com/widgets/q?rt=tf_cw&ServiceVersion=20070822&MarketPlace=JP&ID=V20070822%2FJP%2Fchristiantcoj-22%2F8010%2F2b1d5d8e-4785-4270-9555-c585d9e00bc3&Operation=GetScriptTemplate"> </SCRIPT> <NOSCRIPT><A rel="nofollow" HREF="http://ws-fe.amazon-adsystem.com/widgets/q?rt=tf_cw&ServiceVersion=20070822&MarketPlace=JP&ID=V20070822%2FJP%2Fchristiantcoj-22%2F8010%2F2b1d5d8e-4785-4270-9555-c585d9e00bc3&Operation=NoScript">Amazon.co.jp ウィジェット</A></NOSCRIPT>
+		</div>
+		</div -->
+		<script>
+var imbox=$('div.art-photo');imbox.find('a.expand').click(function(){ $('a.expand').colorbox({rel:'expand',current:'',retinaImage:true}); });
+</script>
+</div><!-- /art-body -->
+		</div>
+		</div>
+		<div class="sidewrap" style="position:relative;width:300px;float:right">
+		<div class="side" style="width:300px;float:none !important;">
+		<div class="ad-300"><!-- article_top_300 -->
+<div id='div-gpt-ad-1386892509642-9' style='width:300px; height:250px; margin:0 auto;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1386892509642-9'); });
+</script>
+</div></div>
+<div class="ad-300">
+<!-- /14059165/article_top4_300 -->
+<div id='div-gpt-ad-1480171996128-0' style='height:50px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1480171996128-0'); });
+</script>
+</div>
+</div><div class="ad-300">
+<!-- /14059165/article_top5_300 -->
+<div id='div-gpt-ad-1481629387044-0' style='height:50px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1481629387044-0'); });
+</script>
+</div>
+</div><div class="ad-300">
+<!-- /14059165/article_top8_300 -->
+<div id='div-gpt-ad-1485001312857-1' style='height:50px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1485001312857-1'); });
+</script>
+</div>
+</div>
+<h4 class="secttl2">主要ニュース</h4>
+<div class="s-con">
+  <div class="list">
+    <div class="photo"><a href="/articles/26436/20190109/religion-business-katsuhiro-kohara.htm"><img style="padding:0;" src="https://www.christiantoday.co.jp/data/images/full/29530/image.jpg?w=58&amp;h=0&amp;l=50&amp;t=40" alt="「宗教」と「ビジネス」の新たな接点を提示する　小原克博著『世界を読み解く「宗教」入門』"></a></div>
+    <h3 class="ttl3"><a href="/articles/26436/20190109/religion-business-katsuhiro-kohara.htm">宗教とビジネスの新接点　小原克博著『世界を読み解く「宗教」入門』</a></h3>
+  <div class="summary"></div>
+ </div>
+  <div class="list">
+    <div class="photo"><a href="/articles/26435/20190109/george-h-w-bush-doing-good-in-secret.htm"><img style="padding:0;" src="https://www.christiantoday.co.jp/data/images/full/29529/image.jpg?w=58&amp;h=0&amp;l=50&amp;t=40" alt="故ジョージ・Ｈ・Ｗ・ブッシュ米元大統領の「隠れた善行」"></a></div>
+    <h3 class="ttl3"><a href="/articles/26435/20190109/george-h-w-bush-doing-good-in-secret.htm">故ジョージ・Ｈ・Ｗ・ブッシュ米元大統領の「隠れた善行」</a></h3>
+  <div class="summary"></div>
+ </div>
+  <div class="list">
+    <div class="photo"><a href="/articles/26432/20190108/hong-kong-protestants-black-clothes-china-persecution.htm"><img style="padding:0;" src="https://www.christiantoday.co.jp/data/images/full/29527/image.jpg?w=58&amp;h=0&amp;l=50&amp;t=40" alt="香港プロテスタント、黒の喪服で礼拝参加　中国本土の迫害受け"></a></div>
+    <h3 class="ttl3"><a href="/articles/26432/20190108/hong-kong-protestants-black-clothes-china-persecution.htm">香港プロテスタント、黒の喪服で礼拝参加　中国本土の迫害受け</a></h3>
+  <div class="summary"></div>
+ </div>
+  <div class="list">
+    <div class="photo"><a href="/articles/26431/20190108/vatican-press-office-top-two-resign.htm"><img style="padding:0;" src="https://www.christiantoday.co.jp/data/images/full/18084/image.jpg?w=58&amp;h=0&amp;l=50&amp;t=40" alt="バチカン"></a></div>
+    <h3 class="ttl3"><a href="/articles/26431/20190108/vatican-press-office-top-two-resign.htm">バチカン広報局のトップ２人が突如辞任</a></h3>
+  <div class="summary"></div>
+ </div>
+  <div class="list">
+    <div class="photo"><a href="/articles/26429/20190107/religion-cult.htm"><img style="padding:0;" src="https://www.christiantoday.co.jp/data/images/full/28623/image.jpg?w=58&amp;h=0&amp;l=50&amp;t=40" alt="オウム真理教"></a></div>
+    <h3 class="ttl3"><a href="/articles/26429/20190107/religion-cult.htm">宗教がカルトに変わるとき</a></h3>
+  <div class="summary"></div>
+ </div>
+  <span><a href="/archives/">もっと読む</a></span>
+</div><!-- /s-con2 -->
+<div class="ad-300"><!-- /14059165/article_mid1_300 -->
+<div id='div-gpt-ad-1448432764134-0'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1448432764134-0'); });
+</script>
+</div></div>
+<div class="ad-300">
+<!-- /14059165/article_top9_300 -->
+<div id='div-gpt-ad-1485001312857-2' style='height:50px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1485001312857-2'); });
+</script>
+</div>
+</div><div class="ad-300">
+<!-- /14059165/article_top10_300 -->
+<div id='div-gpt-ad-1485001312857-3' style='height:50px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1485001312857-3'); });
+</script>
+</div>
+</div><div class="ad-300">
+<!-- /14059165/article_top11_300 -->
+<div id='div-gpt-ad-1508078777455-0' style='height:50px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1508078777455-0'); });
+</script>
+</div>
+</div><div class="ad-300">
+<!-- /14059165/article_top12_300 -->
+<div id='div-gpt-ad-1508078777455-1' style='height:50px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1508078777455-1'); });
+</script>
+</div>
+</div><div class="ad-300">
+<!-- /14059165/article_top13_300 -->
+<div id='div-gpt-ad-1508078777455-2' style='height:50px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1508078777455-2'); });
+</script>
+</div>
+</div>
+<h4 class="secttl"><a href="/column/">コラム</a></h4><div class="s-con2">
+  <div class="list">
+    <div class="photo">
+   <a href="/articles/26434/20190108/nihon-senkyo-ron-82.htm"><img style="padding:0;" src="https://www.christiantoday.co.jp/data/images/full/22665/image.jpg?w=96&amp;h=96&amp;l=50&amp;t=40" alt="後藤牧人"></a>
+  </div>
+    <h3 class="ttl3"><a href="/articles/26434/20190108/nihon-senkyo-ron-82.htm">日本宣教論（８２）生涯雇用の衰退　後藤牧人</a></h3>
+  <div class="summary"></div>
+ </div>
+  <div class="list">
+    <div class="photo">
+   <a href="/articles/26433/20190108/kosodate-papa-14.htm"><img style="padding:0;" src="https://www.christiantoday.co.jp/data/images/full/29528/image.jpg?w=96&amp;h=96&amp;l=50&amp;t=40" alt="子育てパパのキリスト教ひとり言（１４）ドロドロした人間関係？"></a>
+  </div>
+    <h3 class="ttl3"><a href="/articles/26433/20190108/kosodate-papa-14.htm">子育てパパのキリスト教ひとり言（１４）ドロドロした人間関係？</a></h3>
+  <div class="summary"></div>
+ </div>
+  <div class="list">
+    <div class="photo">
+   <a href="/articles/26430/20190107/kyodai-shiki-bible-greek-for-beginners-6.htm"><img style="padding:0;" src="https://www.christiantoday.co.jp/data/images/full/29526/image.jpg?w=96&amp;h=96&amp;l=50&amp;t=40" alt="京大式・聖書ギリシャ語入門（６）東方の「クリスマス」を記念しつつー定冠詞の男性形と第２変化名詞（男性）、未完了過去形ー"></a>
+  </div>
+    <h3 class="ttl3"><a href="/articles/26430/20190107/kyodai-shiki-bible-greek-for-beginners-6.htm">京大式・聖書ギリシャ語入門（６）東方の「クリスマス」を記念しつつー定冠詞の男性形と第２変化名詞（男性）、未完了過去形ー</a></h3>
+  <div class="summary"></div>
+ </div>
+  <div class="list">
+    <div class="photo">
+   <a href="/articles/26428/20190107/shinseijingo-63.htm"><img style="padding:0;" src="https://www.christiantoday.co.jp/data/images/full/14062/image.jpg?w=96&amp;h=96&amp;l=50&amp;t=40" alt="浜島敏"></a>
+  </div>
+    <h3 class="ttl3"><a href="/articles/26428/20190107/shinseijingo-63.htm">神声人語―御言葉は異文化を超えて―（６３）御言葉が人々に語る　浜島敏</a></h3>
+  <div class="summary"></div>
+ </div>
+  <div class="list">
+    <div class="photo">
+   <a href="/articles/26427/20190107/eiji-mandai.htm"><img style="padding:0;" src="https://www.christiantoday.co.jp/data/images/full/16170/image.jpg?w=96&amp;h=96&amp;l=50&amp;t=40" alt="万代栄嗣"></a>
+  </div>
+    <h3 class="ttl3"><a href="/articles/26427/20190107/eiji-mandai.htm">さあ、信仰を働かせよう！ 事を成し遂げよう！　万代栄嗣</a></h3>
+  <div class="summary"></div>
+ </div>
+   <div><ul class="menu"><li><span class="ic-arrow"></span><a href="/column/">新着コラム</a></li><li><span class="ic-sponsor"></span><a href="/column/columnists.html">執筆者一覧</a></li></ul></div>
+</div><!-- /s-con -->
+
+
+
+<!-- /s-con2 -->
+
+<div class="ad-300"><!-- article_mid2_300 -->
+<div id='div-gpt-ad-1394533127152-0' style='width:300px; height:250px; margin:0 auto;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1394533127152-0'); });
+</script>
+</div>
+</div><div class="ad-300">
+<!-- /14059165/article_top15_300 -->
+<div id='div-gpt-ad-1508078777455-4' style='height:50px; width:300px;'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1508078777455-4'); });
+</script>
+</div>
+</div><h4 class="secttl">人気記事ランキング</h4>
+<div class="s-con">
+	<ol class="ranking">
+	<!--	<div class="list">-->
+<li>
+      <span class="no1">1</span>
+      <a href="/articles/26435/20190109/george-h-w-bush-doing-good-in-secret.htm">
+       <div><img src="https://www.christiantoday.co.jp/data/images/full/29529/image.jpg?w=58&amp;l=50&amp;t=40" alt=""></div>       <p>故ジョージ・Ｈ・Ｗ・ブッシュ米元大統領の「隠れた善行」</p>
+      </a>
+     </li>
+	
+	<!--	</div>-->
+	<!--	<div class="list">-->
+<li>
+      <span class="no2">2</span>
+      <a href="/articles/26431/20190108/vatican-press-office-top-two-resign.htm">
+       <div><img src="https://www.christiantoday.co.jp/data/images/full/18084/image.jpg?w=58&amp;l=50&amp;t=40" alt=""></div>       <p>バチカン広報局のトップ２人が突如辞任</p>
+      </a>
+     </li>
+	
+	<!--	</div>-->
+	<!--	<div class="list">-->
+<li>
+      <span class="no3">3</span>
+      <a href="/articles/26433/20190108/kosodate-papa-14.htm">
+       <div><img src="https://www.christiantoday.co.jp/data/images/full/29528/image.jpg?w=58&amp;l=50&amp;t=40" alt=""></div>       <p>子育てパパのキリスト教ひとり言（１４）ドロドロした人間関係？</p>
+      </a>
+     </li>
+	
+	<!--	</div>-->
+	<!--	<div class="list">-->
+<li>
+      <span class="no4">4</span>
+      <a href="/articles/26429/20190107/religion-cult.htm">
+       <div><img src="https://www.christiantoday.co.jp/data/images/full/28623/image.jpg?w=58&amp;l=50&amp;t=40" alt=""></div>       <p>宗教がカルトに変わるとき</p>
+      </a>
+     </li>
+	
+	<!--	</div>-->
+	<!--	<div class="list">-->
+<li>
+      <span class="no5">5</span>
+      <a href="/articles/26436/20190109/religion-business-katsuhiro-kohara.htm">
+       <div><img src="https://www.christiantoday.co.jp/data/images/full/29530/image.jpg?w=58&amp;l=50&amp;t=40" alt=""></div>       <p>「宗教」と「ビジネス」の新たな接点を提示する　小原克博著『世界を読み解く「宗教」入門』</p>
+      </a>
+     </li>
+	
+	<!--	</div>-->
+		</ol>
+</div><!-- /s-con -->
+
+
+
+<!-- h4 class="secttl">ツイッターの最新投稿</h4>
+<div class="s-con">
+<a class="twitter-timeline" data-lang="ja" data-width="300" data-height="400" data-theme="light" href="https://twitter.com/chtodayjp">Tweets by chtodayjp</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div -->
+
+<!-- h4 class="secttl">最新のコメント</h4>
+<div id="recentcomments">
+<script type="text/javascript" src="http://chtodayjp.disqus.com/recent_comments_widget.js?num_items=4&hide_avatars=0&avatar_size=32&excerpt_length=100"></script>
+</div -->
+
+<div class="ad-300"><!-- article_bot_300 -->
+<div id='div-gpt-ad-1386892509642-2' style='width:300px; height:250px;margin:0 auto;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1386892509642-2'); });
+</script>
+</div></div>
+
+<!-- h4 class="secttl">最新のコメント</h4>
+<div id="recentcomments">
+<script type="text/javascript" src="http://chtodayjp.disqus.com/recent_comments_widget.js?num_items=4&hide_avatars=0&avatar_size=32&excerpt_length=100"></script>
+</div -->
+		</div></div>
+	</div>
+</section>
+		<div class="ad-foot ad-artbtm"><!-- article_bot_728 -->
+<div id='div-gpt-ad-1386892509642-3' style='margin:0 auto;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1386892509642-3'); });
+</script>
+</div></div>
+		
+<script src="/views/js/side.js"></script><div class="sp-con" id="sp-con">
+<!--<div style="width:950px;height:50px;margin:auto;"><center><marquee behavior="scroll" direction="left" scrolldelay="10" scrollamount="3">-->
+	<ul id="f-sponsors">
+		<li><a href="http://www.yodobashi-church.com/" target="_blank"><img src="https://www.christiantoday.co.jp/ads/banner/sponsor/yodobashi.jpg" /></a></li><li><a href="http://gracemission.jp/" target="_blank"><img src="https://www.christiantoday.co.jp/ads/banner/sponsor/grace.jpg" /></a></li><li><!-- a href="https://www.christiantoday.co.jp/articles/24194/20170728/petpapa-ceremony-church.htm" target="_blank"><img src="https://www.christiantoday.co.jp/ads/banner/sponsor/pet-papa.jpg" /></a -->
+<a href="http://ponet-yamahide.cocolog-nifty.com" target="_blank"><img src="https://www.christiantoday.co.jp/ads/banner/sponsor/yamahide.jpg" /></a></li><li><a href="http://www.noyurikai.com/" target="_blank"><img src="https://www.christiantoday.co.jp/ads/banner/sponsor/noyuri.jpg" /></a></li><li><a href="http://ibcelim.com/course.html" target="_blank"><img src="https://www.christiantoday.co.jp/ads/banner/sponsor/ikoma_sep.jpg" /></a><!-- 2018.05.24 --></li><li><a href="http://www.worship-japan.com/top.html" target="_blank"><img src="https://www.christiantoday.co.jp/ads/banner/sponsor/worship-japan.jpg" /></a><!-- 2017.12.09-2018.12.08 --></li><li><!-- a href="http://fromheaven.co.jp/" target="_blank"><img src="https://www.christiantoday.co.jp/ads/banner/sponsor/from-heaven.jpg" /></a --><!-- 2017.12.25-2018.12.25 -->
+<a href="https://www.christiantoday.co.jp/articles/15928/20150505/kingdom-builders.htm" target="_blank"><img src="https://www.christiantoday.co.jp/ads/banner/sponsor/sakuta-style.jpg" /></a><!-- 2017.12.25-2018.12.25 --></li><li><a href="http://sunbuilder.jp/" target="_blank"><img src="https://www.christiantoday.co.jp/ads/banner/sponsor/sunbuilder.jpg" /></a></li>    </ul>
+<!--</marquee></center></div>-->
+</div>
+<footer>
+	<div class="innerwrap">
+		<ul class="fmenu">
+	    	<li><a href="/church/">教会</a> | <a href="/theology/">神学・教育</a> | <a href="/mission/">宣教</a> | <a href="/international/">国際</a> | <a href="/society/">社会</a> | <a href="/culture/">文化</a> | <a href="/column/">コラム</a> | <a href="/book/">書籍</a> | <a href="/event/">イベント</a></li>
+	        <li><a href="/about/company.htm">会社概要</a> | <a href="/about/message.htm">代表挨拶</a> | <a href="/about/sponsor.htm">サポーター・スポンサー募集</a> | <a href="/about/advertise.htm">広告案内</a> | <a href="/about/rule.htm">利用規約</a> | <a href="/about/contact.htm">お問い合せ</a> | <a href="https://blog.christiantoday.co.jp" target="_blank">公式ブログ</a></li>
+	        <li>Copyright &copy; 2002-<script type="text/javascript">ShowNowYear();</script> Christian Today Co., Ltd. All Rights Reserved.</li>
+	    </ul>
+	    <p class="fsns"><a href="https://www.facebook.com/chtodayjp" target="_blank" class="fb"><span>facebook</span></a><a href="https://twitter.com/chtodayjp" target="_blank" class="tw"><span>twitter</span></a><a href="https://plus.google.com/+chtodayjp" target="_blank" class="gp"><span>google+</span></a><a href="/rss/" class="rss"><span>rss</span></a></p>
+	</div>
+</footer>
+<!--<script src="/ascroller.js"></script>
+<script type="text/javascript">divScroller("sp-con", "h", 10);</script>-->
+<script src="https://www.christiantoday.co.jp/home/plugin/bxslider/jquery.bxslider.min.js"></script>
+<script>
+$('#f-sponsors').bxSlider({
+  minSlides: 2,
+  maxSlides: 6,
+  slideWidth: 160,
+  slideMargin: 20,
+  ticker: true,
+  useCSS: false,
+  tickerHover: true,
+  infiniteLoop:true,
+  speed: 25000
+});
+</script>
+<!-- script src="//cdnjs.cloudflare.com/ajax/libs/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js"></script>
+<script>
+$('#f-sponsors').carouFredSel({align:false,items:6,
+	scroll:{
+		items:1,
+		duration:2000,
+		timeoutDuration:0,
+		easing:'linear',
+		pauseOnHover:'immediate'
+	}
+});$('.caroufredsel_wrapper').css('margin','auto');
+</script -->
+<!-- hidden iframe -->
+<iframe width="0" height="0" name="hiddenframe" style="display:none;"></iframe>
+<link rel="stylesheet" href="https://www.christiantoday.co.jp/home/plugin/bxslider/jquery.bxslider.css" type="text/css" />
+<script type="text/javascript" src="https://www.christiantoday.co.jp/home/js/touch.js"></script>
+<script type="text/javascript" src="https://www.christiantoday.co.jp/home/plugin/bxslider/jquery.bxslider.js"></script>
+<script>
+$(window).load(function(){
+$('#im-list').bxSlider({pager: false, maxSlides:6, slideWidth: 125, captions: true});
+});
+</script>
+
+<link rel="stylesheet" href="https://www.christiantoday.co.jp/home/plugin/sidr/style/jquery.sidr.light.css" type="text/css" />
+<script type="text/javascript" src="https://www.christiantoday.co.jp/home/plugin/sidr/jquery.sidr.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+<script>
+/*$('#m-nav').sidr({ name:'m-menu', source:'#m-menu', side:'left' });
+//$(window).touchwipe({wipeLeft: function(){$.sidr('close', 'm-menu');},wipeRight: function(){$.sidr('open', 'm-menu');},preventDefaultEvents: false});
+$(window).touchwipe({wipeLeft: function(){$.sidr('close', 'm-menu');},preventDefaultEvents: false});
+$('#m-menu .sidr-inner').click(function(){ $.sidr('close', 'm-menu'); });*/
+</script>
+
+<script>
+var aday=Math.floor(Date.now()/1000);
+$('span.timeago').each(function(index){if($(this).attr('timestamp')>aday-86400){$(this).timeago();}});
+$('#search-go').click(function(){$('#header-search').submit();});
+</script>
+
+<script type="text/javascript">
+	  var _gaq = _gaq || [];_gaq.push(['_setCustomVar',2,'Page Type','Article',3]);
+			_gaq.push(['_setCustomVar',1,'Reporter','木下 優紀',3]);
+			_gaq.push(['_setCustomVar',3,'Article Category','国際',3]);
+			_gaq.push(['_setCustomVar',4,'Source','Christian Today  UK',3]); _gaq.push(['_setAccount', 'UA-2400048-12']); _gaq.push(['_setDomainName', 'christiantoday.co.jp']);
+_gaq.push(['_trackPageview']);
+	 (function(){var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+	</script><script type="text/javascript"> __article_id = '20416';__reporter_id='25'; </script>
+	<script type="text/javascript" src="https://www.christiantoday.co.jp/home/js/article_counter.js"></script><script type="text/javascript" src="https://www.christiantoday.co.jp/home/js/article.js"></script>
+
+
+<!-- Start of Amazon Publisher Studio Loader by SU -->
+<script>  window.amznpubstudioTag = "christiantcoj-22";  </script>    <!-- Do not modify the following code ! -->  <script async="true" type="text/javascript" src="http://ps-jp.amazon-adsystem.com/domains/christiantcoj-22_dec08658-9d70-4289-b831-af29a0ec453c.js" charset="UTF-8"></script>
+<!-- End of Amazon Publisher Studio Loader by SU -->  
+
+<!-- Amazon Mobile Popover by SU -->
+<script type="text/javascript">
+  amzn_assoc_ad_type = "link_enhancement_widget";
+  amzn_assoc_tracking_id = "christiantcoj-22";
+  amzn_assoc_placement = "";
+  amzn_assoc_marketplace = "amazon";
+  amzn_assoc_region = "JP";
+</script>
+<script src="//z-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+<!-- /Amazon Mobile Popover by SU -->
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3b660d9590","applicationID":"33259210","transactionName":"ZARVZBNVC0EFBUZeXV1OYkIIGw1dCQMdWVdEEhhRE0AMUQgDHEdaQw==","queueTime":0,"applicationTime":48,"atts":"SENWEltPGE8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

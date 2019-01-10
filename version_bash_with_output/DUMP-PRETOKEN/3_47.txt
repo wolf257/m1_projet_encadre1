@@ -1,0 +1,194 @@
+   #next CNN.co.jp 国際ニュース総合フィード
+
+   IFRAME:
+   //imp.aiasahi.jp/hserver/SITE=CNNCOJP.WORLD/AREA=WALLPAPER/AAMSZ=1640X1
+   200/KEYWORD=zone_world%2035038972/OENCJP=UTF8/
+
+   cnn.co.jp
+     * _______________________________________________________ Search
+     * Featured
+          + 朝鮮半島情勢
+          + ＣＮＮが見たアジア
+          + 生物多様性
+          + サイエンス
+          + のりものだいすき
+     * World
+     * USA
+     * Business
+     * Tech
+     * Entertainment
+     * Travel
+     * Photo
+     * Video
+     * Odd News
+     * Style
+
+   Login Member
+
+   IFRAME:
+   //imp.aiasahi.jp/hserver/SITE=CNNCOJP.WORLD/AREA=LARGE/AAMSZ=728X90/KEY
+   WORD=zone_world%2035038972/OENCJP=UTF8/
+
+     *
+     * World
+
+２歳児と３歳児をレイプし殺害、男ら逮捕　南ア
+
+   2013.10.25 Fri posted at 10:46 JST
+     *
+     * Tweet
+
+   IFRAME:
+   //imp.aiasahi.jp/hserver/SITE=CNNCOJP.WORLD/AREA=TEXT4/AAMSZ=230X40/KEY
+   WORD=zone_world%2035038972/OENCJP=UTF8/
+
+   幼児２人を強姦・殺害、南ア社会に衝撃
+
+   南アフリカ・ディープスルート(ＣＮＮ） 南アフリカ・ヨハネスブルグ北部ディープスルートで１５日、誘拐された２歳と３歳の女児の遺体が公共トイレで
+   発見された。
+
+   女児らは強姦（ごうかん）・殺害されたとみられ、地元社会は大きな衝撃を受けている。
+
+   ヨネリサちゃんとザンティル・マリちゃんの女児２人はいとこ同士で、日中、家の前で遊んでいたところを誘拐された。
+
+   ２日後の１５日、２人の遺体は公共トイレで発見された。その後、５人の男が女児の誘拐、強姦、殺人の容疑で逮捕された。
+
+   ヨハネスブルグ郊外に広がる黒人居住地区は、南アでも犯罪発生率がもっとも高い地域の１つだ。ヨネリサちゃんの母は５分ごとに２人が一緒に遊んでいる様
+   子を確認していた。それでも事件は起きた。
+     * 1
+     * 2
+     *
+
+     *
+     * Tweet
+
+こんな話題も
+
+     * バス運転手２人を車内で「処刑」か、レイプ報復で　メキシコ09/05
+     * 高校生が食堂で性的行為か、昼食時に　米10/17
+     * 「世界一危険」な湖？　毎年５０００人が死亡 ビクトリア湖01/19
+
+   IFRAME:
+   //imp.aiasahi.jp/hserver/SITE=CNNCOJP.WORLD/AREA=UNDERTEXT3/AAMSZ=230X4
+   0/KEYWORD=zone_world%2035038972/OENCJP=UTF8/
+
+Video
+
+   強風のなか横向きで着陸成功
+   強風のなか横向きで着陸成功10/20
+   深海で「頭のないチキンモンスター」を撮影
+   深海で「頭のないチキンモンスター」を撮影10/23
+   オットセイ、海上の人間をタコで攻撃？
+   オットセイ、海上の人間をタコで攻撃？09/27
+
+Photo
+
+   北京五輪から１０年、変わり果てた競技会場
+   北京五輪から１０年、変わり果てた競技会場08/17
+   操縦席からの絶景、飛行士が撮影
+   操縦席からの絶景、飛行士が撮影09/27
+   まるでＳＦ、夜の東京を見る
+   まるでＳＦ、夜の東京を見る06/16
+
+注目ニュース
+
+     * トランプ大統領、壁建設でテレビ演説　「心と魂の危機」訴え 12:41
+     * タイで拘束のサウジ女性、オーストラリアが難民ビザ審査へ 20:00
+     * イラン、まもなく衛星打ち上げか　ＣＮＮが画像入手 18:50
+     * 「世界最強のパスポート」、日本が依然トップ　韓国２位に 18:18
+     * ＮＡＳＡの惑星探査衛星「ＴＥＳＳ」、最初の成果　系外惑星３つを発見 19:30
+
+   IFRAME:
+   //imp.aiasahi.jp/hserver/SITE=CNNCOJP.WORLD/AREA=RECT/AAMSZ=300X250/KEY
+   WORD=zone_world%2035038972/OENCJP=UTF8/
+
+   IFRAME:
+   //imp.aiasahi.jp/hserver/SITE=CNNCOJP.WORLD/AREA=CHUMOKU/AAMSZ=300X100/
+   KEYWORD=zone_world%2035038972/OENCJP=UTF8/
+
+   地球上の秘境
+
+編集部セレクト
+
+   写真特集：世界最大の未完成機、２機目のＡｎ２２５
+   写真特集：世界最大の未完成機、２機目のＡｎ２２５01/03
+   カリブ海の巨大陥没穴「グレートブルーホール」、海底探査で謎解明へ
+   カリブ海の巨大陥没穴「グレートブルーホール」、海底探査で謎解明へ12/12
+   太陽系の最果ての天体「ファーアウト」発見、すばる望遠鏡で観測
+   太陽系の最果ての天体「ファーアウト」発見、すばる望遠鏡で観測 12/18
+   ザンビアでエメラルドの原石見つかる、重さ１．１キロ
+   ザンビアでエメラルドの原石見つかる、重さ１．１キロ10/31
+   猫のミイラが数十体、珍しいスカラベのミイラも　エジプトで発掘
+   猫のミイラが数十体、珍しいスカラベのミイラも　エジプトで発掘11/12
+
+   IFRAME:
+   //imp.aiasahi.jp/hserver/SITE=CNNCOJP.WORLD/AREA=MRECT/AAMSZ=300X250/KE
+   YWORD=zone_world%2035038972/OENCJP=UTF8/
+
+アクセスランキング
+
+    1. 「脱出ルーム」で火災、１５歳少女５人死亡　ポーランド01/05
+    2. 空き家があふれる日本、定住希望者には「家をあげます」01/03
+    3. 元イングランド代表のルーニーを逮捕、公共の場で泥酔　米01/07
+    4. 皮をはがれた生贄の神「シペ・トテック」の寺院、初めて発掘　メキシコ01/04
+    5. ７歳少女を「人違い」で射殺か、２０歳の容疑者逮捕　米テキサス州01/07
+
+   IFRAME:
+   //imp.aiasahi.jp/hserver/SITE=CNNCOJP.WORLD/AREA=VRECT/AAMSZ=300X250/KE
+   YWORD=zone_world%2035038972/OENCJP=UTF8/
+
+     * CNN.co.jp App CNN.co.jp App for iPhone/iPad
+     * CNNテレビ視聴 CNNテレビ視聴
+     * CNN US アメリカ国内版CNN/USテレビをそのまま日本で
+     * CNN English ちょっと手ごわい、でも効果絶大！
+
+     *
+     *
+     *
+
+     * Home
+     * Featured
+     * World
+     * USA
+     * Business
+     * Tech
+     * Entertainment
+     * Travel
+     * Photo
+     * Video
+     * Odd News
+     * Style
+     * Topic
+     * RSS
+
+     * 各国語サイト
+     * CNN International
+     * CNN en ESPAÑOL
+     * CNN Chile
+     * CNN México
+     * العربية
+     * Türkçe
+
+     * 関連リンク
+     * CNN Business
+     * bleacherreport
+     * 朝日新聞デジタル
+
+     * プライバシー
+     * CNN.co.jpに関する問い合わせ
+     * 日本でのCNNの放送に関するお問い合わせ
+     * 広告掲載
+     * サイト利用
+     * サイトマップ
+
+   © 2019 Cable News Network.　Turner Broadcasting System, Inc.　All Rights
+   Reserved.
+
+   このサイトでは、利用状況の把握や広告配信などのために、Cookieなどを使用してアクセスデータを取得・利用しています。
+   これ以降ページを遷移した場合、Cookieなどの設定や使用に同意したことになります。
+   Cookieなどの設定や使用の詳細、オプトアウトについては詳細をご覧ください。
+   [ 閉じる ]
+
+   IFRAME:
+   //imp.aiasahi.jp/hserver/SITE=CNNCOJP.WORLD/AREA=INREAD/AAMSZ=1X1/KEYWO
+   RD=zone_world%2035038972/OENCJP=UTF8/

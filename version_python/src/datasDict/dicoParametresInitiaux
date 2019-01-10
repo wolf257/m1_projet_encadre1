@@ -1,0 +1,12 @@
+{
+    "fr":
+    {
+        "viol": {"num": 0, "query": "viol\u00e9", "langue": "fran\u00e7ais", "pattern": "viol|viol\u00e9|viol\u00e9e"}, 
+        "abus": {"num": 1, "query": "abus\u00e9", "langue": "fran\u00e7ais", "pattern": "abus\u00e9|abus\u00e9e"}
+    },
+  "en": 
+  {
+      "rape": {"num": 2, "query": "raped", "langue": "anglais", "pattern": "rape|raped"},     
+      "abuse": {"num": 3, "query": "abused", "langue": "anglais", "pattern": "abuse|abused"}
+  }
+ }

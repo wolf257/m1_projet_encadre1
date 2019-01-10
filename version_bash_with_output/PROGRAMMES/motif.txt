@@ -1,0 +1,1 @@
+MOTIF=violée?|agressée?|raped|abused|\b強姦\s?[すしさ]|\bレイプ\s?[すしさ]
